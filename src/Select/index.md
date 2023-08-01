@@ -1,29 +1,38 @@
 ---
-title: Select 选择器
+title: Select 下拉菜单
 nav:
   title: 通用
   path: /component
 group:
-  path: /component
+  title: 菜单
 ---
 
-# Select 选择器
+# Select 下拉菜单
 
-当选项过多时，使用下拉菜单展示并选择内容。
+下拉选择器。
 
+#### 何时使用
 
-## 基础用法
+弹出一个下拉菜单给用户选择操作，用于代替原生的选择器。
 
-适用广泛的基础单选
-<code src="./demo/index1.tsx" />
+## 基本使用
 
-## 有禁用选项
+<code src="./demos/index1.tsx" />
 
-<code src="./demo/index2.tsx" />
+## 禁用
 
-##  禁用
+<code src="./demos/index2.tsx" />
 
-选择器不可用状态
-<code src="./demo/index3.tsx" />
+## 加载
+
+<code src="./demos/index3.tsx" />
+
+## 下拉项单独禁用
+
+<code src="./demos/index4.tsx" />
+
+## 可输入
+
+<code src="./demos/index5.tsx" />
 
 <API></API>

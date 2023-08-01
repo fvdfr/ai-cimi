@@ -1,0 +1,100 @@
+.button button {
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.button .primary {
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+}
+.button .primary:focus {
+  color: #409eff;
+  border-color: #c6e2ff;
+  background-color: #ecf5ff;
+}
+.button .primary:hover {
+  color: #409eff;
+  border-color: #c6e2ff;
+  background-color: #ecf5ff;
+}
+.button .primary.isdisable {
+  color: #c0c4cc;
+  cursor: not-allowed;
+  background-image: none;
+  background-color: #fff;
+  border-color: #ebeef5;
+}
+.button .main {
+  color: #fff;
+  background-color: #409eff;
+  border-color: #409eff;
+  border: none;
+}
+.button .main:focus {
+  background: #66b1ff;
+  border-color: #66b1ff;
+  color: #fff;
+}
+.button .main:hover {
+  background: #66b1ff;
+  border-color: #66b1ff;
+  color: #fff;
+}
+.button .danger {
+  color: #fff;
+  background-color: #f56c6c;
+  border-color: #f56c6c;
+  border: none;
+}
+.button .danger:focus {
+  background: #f78989;
+  border-color: #f78989;
+  color: #fff;
+}
+.button .danger:hover {
+  background: #f78989;
+  border-color: #f78989;
+  color: #fff;
+}
+.button .success {
+  color: #fff;
+  background-color: #67c23a;
+  border-color: #67c23a;
+  border: none;
+}
+.button .success:focus {
+  background: #85ce61;
+  border-color: #85ce61;
+  color: #fff;
+}
+.button .success:hover {
+  background: #85ce61;
+  border-color: #85ce61;
+  color: #fff;
+}
+.button .warning {
+  color: #fff;
+  background-color: #e6a23c;
+  border-color: #e6a23c;
+  border: none;
+}
+.button .warning:focus {
+  background: #ebb563;
+  border-color: #ebb563;
+  color: #fff;
+}
+.button .warning:hover {
+  background: #ebb563;
+  border-color: #ebb563;
+  color: #fff;
+}

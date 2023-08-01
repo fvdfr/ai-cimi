@@ -1,5 +1,5 @@
 import React from 'react';
-import BackToTop from '../index';
+import ScrollToTop from '../index';
 
 const App: React.FC = () => {
   const Style: React.CSSProperties = {
@@ -20,9 +20,9 @@ const App: React.FC = () => {
   };
  
   return (
-    <div style={{ height: '100px' }}>
+    <div style={{ height: '300px' }}>
       <span>让滚动条飞一会</span>      
-      <BackToTop showUnder={400} style={Style}  />
+      <ScrollToTop showUnder={500} style={Style}  />
     </div>
   );
 };

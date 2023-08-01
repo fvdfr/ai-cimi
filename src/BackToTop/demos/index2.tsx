@@ -1,11 +1,10 @@
 import React,{useRef} from 'react';
-import BackToTop from '../index';
+import ScrollToTop from '../index';
   
 const App: React.FC = () => {
   const Style: React.CSSProperties = {
     position: 'relative',
-    top:'375px',
-    // bottom:'0px',
+    top:'375px',    
     right: '0px',
     color: '#ffffff',
     backgroundColor: '#4994c4',
@@ -22,7 +21,7 @@ const App: React.FC = () => {
   return (
     <div style={{height: '400px',}} >
     <span>点击返回顶部</span>    
-      <BackToTop showUnder={450} style={Style} />
+      <ScrollToTop showUnder={750} style={Style} />
     </div>
   );
 };

@@ -24,4 +24,3 @@ group:
 页面数据加载时显示
 
 <code src="./demos/index3.tsx"/>
-<API>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export interface BackToTopProps {
+export interface ScrollToTopProps {
   /**
    * @description 向下滑动的值
    */
@@ -9,13 +9,10 @@ export interface BackToTopProps {
    * @description css样式
    */
   style: React.CSSProperties;
-  /*
-   * @description  onclick
-   */
-  onClick?: () => void;
+
 }
 
-const BackToTop: React.FC<BackToTopProps> = (props) => {
+const ScrollToTop: React.FC<ScrollToTopProps> = (props) => {
   const { showUnder, style, ...restProps } = props;
   const [isVisible, setIsVisible] = useState(false); // 按钮的显示隐藏条件
 
@@ -25,7 +22,7 @@ const BackToTop: React.FC<BackToTopProps> = (props) => {
     setIsVisible(scrollTop > showUnderChange); //当滚动高度大于设置的值时展示按钮
   };
 
-  const backToTop = () => {
+  const scrollToTop = () => {
    
     window.scrollTo({
       top: 0,
@@ -43,7 +40,7 @@ const BackToTop: React.FC<BackToTopProps> = (props) => {
   return (
     <div>
       {isVisible && (
-        <button style={style} onClick={backToTop}>
+        <button style={style} onClick={scrollToTop}>
          UP
         </button>
       )}
@@ -52,7 +49,7 @@ const BackToTop: React.FC<BackToTopProps> = (props) => {
 };
 
 // 使用 defaultProps 可以为组件的属性设置默认值
-BackToTop.defaultProps = {
+ScrollToTop.defaultProps = {
   showUnder: 100,
   style: {
     position: 'fixed',
@@ -61,4 +58,4 @@ BackToTop.defaultProps = {
     cursor: 'pointer',
   },
 };
-export default BackToTop;
+export default ScrollToTop;
