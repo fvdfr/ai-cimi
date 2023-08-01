@@ -1,0 +1,24 @@
+.style {
+  display: flex;
+}
+.or-header {
+  background-color: #b3c0d1;
+  text-align: center;
+  line-height: 60px;
+}
+.or-main {
+  background-color: #e9eef3;
+  text-align: center;
+  line-height: 200px;
+}
+.or-footer {
+  background-color: #b3c0d1;
+  text-align: center;
+  line-height: 60px;
+}
+.or-aside {
+  background-color: #d3dce6;
+  width: 300px;
+  text-align: center;
+  line-height: 200px;
+}
