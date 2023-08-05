@@ -1,6 +1,6 @@
 // 弹框组件，先分析一下
 import React, { useEffect, useState } from 'react';
-import './message.css';
+import './message.module.css';
 import Button from '../button/button';
 
 /**
@@ -13,9 +13,6 @@ interface MessageProps {
   className?: string;
   delay?: number;
   title?: string | number;
-  
-
- 
 }
 
 const Message: React.FC<MessageProps> = (props) => {
@@ -25,12 +22,11 @@ const Message: React.FC<MessageProps> = (props) => {
   const styleProps = [className].join(' ');
   const handleClick = () => {
     setFlag((prevState) => !prevState);
-    if(title==="打开信息提示"){
-        setshowFirstSpan(false)
+    if (title === '打开信息提示') {
+      setshowFirstSpan(false);
+    } else {
+      setshowFirstSpan(true);
     }
-   else{
-    setshowFirstSpan(true)
-   }
   };
   // 三秒之后弹框自动消失
   useEffect(() => {
@@ -41,17 +37,17 @@ const Message: React.FC<MessageProps> = (props) => {
   }, [flag]);
   return (
     <div style={{ position: 'relative' }} className={styleProps}>
-      <Button onClick={handleClick} style={{ fontSize: '12px' }} >
+      <Button onClick={handleClick} style={{ fontSize: '12px' }}>
         {title || 'hello'}
       </Button>
       {/* 弹窗 */}
       {flag && (
-        <span className="box" >
+        <span className="box">
           {children || '这是一个信息提示窗!'}&nbsp;&nbsp;&nbsp;&nbsp;
           {showFirstSpan ? (
-             <span onClick={handleClick} className="xxx">
-             X
-           </span>
+            <span onClick={handleClick} className="xxx">
+              X
+            </span>
           ) : null}
         </span>
       )}
