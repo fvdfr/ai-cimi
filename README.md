@@ -1,4 +1,4 @@
-# cimi
+# ai-cimi
 
 ## Getting Started
 
