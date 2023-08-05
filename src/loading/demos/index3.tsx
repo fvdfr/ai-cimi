@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Loading from '..';
+import Loading from '../index';
 import Button from '../../Button/index';
 export default function LoadingDemo1() {
   const [className, setClassName] = useState('');
@@ -19,11 +19,11 @@ export default function LoadingDemo1() {
     }, 3000);
   };
   return (
-    <div style={{display:'flex'}}>
+    <div style={{ display: 'flex' }}>
       <Button type="primary" onClick={() => handleClick()}>
         指令方式
       </Button>
-      <Button type="primary" onClick={() => handleClickTwo()} >
+      <Button type="primary" onClick={() => handleClickTwo()}>
         服务方式
       </Button>
       <Loading className={className}></Loading>

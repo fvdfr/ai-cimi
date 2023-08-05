@@ -1,7 +1,7 @@
 ---
 title: Tabs 标签页
 nav:
-  title: Navigation 导航
+  title: 导航
   path: /component
 group:
   path: /navigation

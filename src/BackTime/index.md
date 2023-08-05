@@ -1,8 +1,8 @@
 ---
-title: BackTime组件
+title: BackTime倒计时
 nav:
   title: Component
-  path: /components
+  path: /component
 group:
   path: /other
 ---
