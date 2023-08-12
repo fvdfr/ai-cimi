@@ -43,17 +43,17 @@ export default defineConfig({
       children: [
         {
           title: 'CSDN',
-          path: '',
+          path: 'https://blog.csdn.net/2301_76794950?type=blog',
         },
         {
           title: '掘金',
-          path: '',
+          path: 'https://juejin.cn/user/3767373283203544',
         },
       ],
     },
     {
       title: 'GitHub',
-      path: 'https://github.com',
+      path: 'https://github.com/fvdfr/ai-cimi',
     },
   ],
 });
