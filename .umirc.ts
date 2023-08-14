@@ -40,6 +40,7 @@ export default defineConfig({
     },
     {
       title: '作者',
+      path: 'author',
       children: [
         {
           title: 'CSDN',

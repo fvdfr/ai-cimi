@@ -1,3 +1,27 @@
+.affix {
+  position: relative;
+  z-index: 99;
+  display: inline-block;
+  color: #fff;
+  background-color: #1890ff;
+}
+.input input {
+  padding: 3px 3px 3px 10px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline-style: none;
+  cursor: pointer;
+}
+.input .bordered {
+  border: 1px solid #b1b3b8;
+}
+.input .inputBorder:focus {
+  border: 1px solid #1890ff;
+}
+.input .disabled {
+  cursor: not-allowed;
+}
 .button .general {
   display: flex;
   align-items: center;
@@ -291,30 +315,6 @@
   100% {
     transform: rotate(360deg);
   }
-}
-.affix {
-  position: relative;
-  z-index: 99;
-  display: inline-block;
-  color: #fff;
-  background-color: #1890ff;
-}
-.input input {
-  padding: 3px 3px 3px 10px;
-  font-size: 16px;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  outline-style: none;
-  cursor: pointer;
-}
-.input .bordered {
-  border: 1px solid #b1b3b8;
-}
-.input .inputBorder:focus {
-  border: 1px solid #1890ff;
-}
-.input .disabled {
-  cursor: not-allowed;
 }
 .black {
   width: 820px;
