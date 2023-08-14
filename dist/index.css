@@ -1,10 +1,3 @@
-.affix {
-  position: relative;
-  z-index: 99;
-  display: inline-block;
-  color: #fff;
-  background-color: #1890ff;
-}
 .button .general {
   display: flex;
   align-items: center;
@@ -298,6 +291,13 @@
   100% {
     transform: rotate(360deg);
   }
+}
+.affix {
+  position: relative;
+  z-index: 99;
+  display: inline-block;
+  color: #fff;
+  background-color: #1890ff;
 }
 .input input {
   padding: 3px 3px 3px 10px;
