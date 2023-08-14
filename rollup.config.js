@@ -25,6 +25,9 @@ export default {
       file: './dist/my-lib-umd.js',
       format: 'umd',
       name: 'my-lib-umd.js',
+      globals: {
+        react: 'React', // 指定React对应的全局变量名为React
+      },
     },
     {
       file: 'dist/my-lib-esm.js',
@@ -32,6 +35,7 @@ export default {
       name: 'my-lib-esm.js',
     },
   ],
+
   plugins: [
     //插件配置  使用插件打包具体的文件
     typescript(), // 会自动读取 文件tsconfig.json配置
